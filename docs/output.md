@@ -91,7 +91,7 @@ The sequence is confidently outside its declared taxon, but it is not clear whic
 <summary>Output files</summary>
 
 - `export/`
-  - `*.mislabels.tsv`: a copy of the [mislabels table](#mislabels). Always written.
+  - `*.mislabels.tsv`: a copy of the [mislabels table](#mislabels). Written whenever raxtax or the placement step runs.
   - With `--export_n_per_species`, four files for each number N (`--run_reference` also writes them, for N = 1):
     - `*.n<N>.addSpecies.fna.gz`: reference for DADA2's `addSpecies()`, headers `>ID Genus species`.
     - `*.n<N>.assignTaxonomy.fna.gz`: reference for DADA2's `assignTaxonomy()`, headers `>rank1;rank2;...;species`.
