@@ -297,6 +297,7 @@ raxtax runs with `--skip-exact-matches`, so that a sequence does not simply matc
 
 A sequence is flagged when its best raxtax hit disagrees with its declared taxonomy at the checked rank with a confidence of at least `--raxtax_min_confidence` (default 0.9).
 The checked rank is set by `--raxtax_filter_rank`, counted from the end of the lineage (default 2, the genus in a lineage that ends at species).
+A sequence is not checked if its lineage is shorter than that rank, or if no other sequence has the same declared taxon at that rank.
 Flagged sequences are reported in the [mislabels table](#mislabels) and do not go on to the placement step.
 
 ## Alignment
