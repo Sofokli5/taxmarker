@@ -13,7 +13,7 @@ They are mostly useful to follow what happened to a sequence, and most users can
 A directory is only created when its step runs: some steps depend on the input (for example, alignment only runs for unaligned sequences) and some are switched on or off by parameters.
 Each section below says when its directory appears.
 
-All files are named after `user-alignment`, the name the pipeline gives to the input set.
+Most files are named after `user-alignment`, the name the pipeline gives to the input set.
 Taxonomy files (`*.tax`) are tab-separated, without a header, with two columns: the sequence name and its lineage as a `;`-separated list of ranks, for example `Bacteria;Firmicutes;Clostridia`.
 
 ## Pipeline overview
