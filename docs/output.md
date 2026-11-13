@@ -30,7 +30,7 @@ The pipeline is built using [Nextflow](https://www.nextflow.io/) and processes d
   - [Conversion to FASTA](#conversion-to-fasta) - Convert the sequences to FASTA with EMBOSS seqret
 - Weighted clustering
   - [GTDB weights](#gtdb-weights) - Sequence weights computed from GTDB genome metadata
-  - [Weight filter](#weight-filter) - Remove gaps and drop sequences below `--min_weight`
+  - [Weight filter](#weight-filter) - Drop sequences below `--min_weight` and make an ungapped copy for VSEARCH
   - [Clustering](#clustering) - Cluster identical or similar sequences with VSEARCH
   - [Cluster selection](#cluster-selection) - Keep one representative per cluster and taxon
 - raxtax prefilter
