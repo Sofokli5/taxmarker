@@ -201,7 +201,7 @@ An explicit `--sequence_weights` file wins over these weights.
 
 </details>
 
-Sequences are only dropped when both `--min_weight` and weights (`--sequence_weights` or `--upstream GTDB`) are given; otherwise every sequence is kept and `*.excluded.tsv` has only its header.
+A sequence is dropped when its weight (`--sequence_weights` or `--upstream GTDB`; 1 for a sequence without a weight) is below `--min_weight`. Without `--min_weight` every sequence is kept, and `*.excluded.tsv` has only its header.
 `*.excluded.tsv` is tab-separated, with a header line and these columns:
 
 | Column                 | Description                       |
