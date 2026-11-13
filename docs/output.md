@@ -8,7 +8,7 @@ The directories listed below will be created in the results directory after the 
 
 The final products of a run are in two places: the table of putative mislabels in [`mislabels/`](#mislabels), and everything meant for use afterwards in [`export/`](#export).
 The other directories hold intermediate results, one directory per pipeline step, in the order in which the steps run.
-They are useful to follow what happened to a sequence, and most users can skip them.
+They are mostly useful to follow what happened to a sequence, and most users can skip them.
 
 A directory is only created when its step runs: some steps depend on the input (for example, alignment only runs for unaligned sequences) and some are switched on or off by parameters.
 Each section below says when its directory appears.
