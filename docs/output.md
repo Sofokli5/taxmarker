@@ -342,7 +342,7 @@ Without `--hmm`, all sequences are aligned in one job with [MAFFT](https://mafft
 
 </details>
 
-Only with `--hmm_name` and unaligned input. HMMER `hmmfetch` picks the profile out of a file with several profiles.
+Only with `--hmm` and `--hmm_name`, also when the input is already aligned and the profile is not used. HMMER `hmmfetch` picks the profile out of a file with several profiles.
 
 ## Short-sequence filters
 
